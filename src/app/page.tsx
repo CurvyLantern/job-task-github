@@ -54,7 +54,7 @@ export default function HomePage() {
       {repoDataArr.length === 0 ? (
         <p className="text-white">no data to show</p>
       ) : (
-        <ul className="flex flex-col gap-2 p-2 w-full">
+        <ul className="flex flex-col gap-2 p-2 w-full md:w-1/3">
           {repoDataArr.map((repo) => {
             return (
               <li
