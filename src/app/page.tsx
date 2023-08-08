@@ -62,12 +62,10 @@ export default function HomePage() {
                 className="shadow-md rounded-md p-4 bg-neutral-200 text-neutral-900 flex items-center justify-between">
                 <p>{repo.name}</p>
                 <a
-                  onClick={() => {
-                    repoDownloaderUri({
-                      accName: inputValue,
-                      repoName: repo.name,
-                    });
-                  }}
+                  href={repoDownloaderUri({
+                    accName: inputValue,
+                    repoName: repo.name,
+                  })}
                   className="px-5 py-2 text-white  bg-green-500 rounded-md">
                   download
                 </a>
